@@ -7,18 +7,18 @@
   
   <title>测试 | 学习基地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git init 初始化仓库 git status 查看仓库状态  git log 查看提交日志  git add 文件 git管理的是修改,先add再commit git commit -m “提交说明” git reset –hard HEAD^ 回滚上个版本  HEAD是个指针,回滚前100个使用HEAD~100.使用git log –pretty=oneline 查看提交的的版本号 git">
-<meta name="keywords" content="Java，Web，HTML">
+  <meta name="description" content="Git 基本流程 git clone 仓库地址   git add .   git commit -v git remote add 仓库名 仓库地址 git pull 仓库名 远程分支  git push 仓库名 远程分支">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试">
 <meta property="og:url" content="http://yoursite.com/2019/08/06/测试/index.html">
 <meta property="og:site_name" content="学习基地">
-<meta property="og:description" content="git init 初始化仓库 git status 查看仓库状态  git log 查看提交日志  git add 文件 git管理的是修改,先add再commit git commit -m “提交说明” git reset –hard HEAD^ 回滚上个版本  HEAD是个指针,回滚前100个使用HEAD~100.使用git log –pretty=oneline 查看提交的的版本号 git">
+<meta property="og:description" content="Git 基本流程 git clone 仓库地址   git add .   git commit -v git remote add 仓库名 仓库地址 git pull 仓库名 远程分支  git push 仓库名 远程分支">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-06T07:24:54.655Z">
+<meta property="og:updated_time" content="2019-08-29T10:28:31.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试">
-<meta name="twitter:description" content="git init 初始化仓库 git status 查看仓库状态  git log 查看提交日志  git add 文件 git管理的是修改,先add再commit git commit -m “提交说明” git reset –hard HEAD^ 回滚上个版本  HEAD是个指针,回滚前100个使用HEAD~100.使用git log –pretty=oneline 查看提交的的版本号 git">
+<meta name="twitter:description" content="Git 基本流程 git clone 仓库地址   git add .   git commit -v git remote add 仓库名 仓库地址 git pull 仓库名 远程分支  git push 仓库名 远程分支">
   
     <link rel="alternate" href="/atom.xml" title="学习基地" type="application/atom+xml">
   
@@ -91,33 +91,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>git init 初始化仓库 git status 查看仓库状态 </p>
-<p>git log 查看提交日志 </p>
-<p>git add 文件 git管理的是修改,先add再commit</p>
-<p>git commit -m “提交说明”</p>
-<p>git reset –hard HEAD^ 回滚上个版本  HEAD是个指针,回滚前100个使用HEAD~100.使用git log –pretty=oneline 查看提交的的版本号 git reflog查看命令历史</p>
-<p>git reset –hard 版本号 回滚指定版本号</p>
-<p>git revert HEAD 撤销当前提交-适合远程推送</p>
-<p>git checkout – 文件 可以丢弃工作区的修改</p>
-<p>git reset head 文件 可以把暂存区的修改撤销掉,重新放回工作区</p>
-<p>git rm 文件 + git commit ：删除版本库文件</p>
-<p>git branch 分支名 创建分支 </p>
-<p>git branch -d 分支名 删除分支 </p>
-<p>git branch -f 分支名 版本号/HEAD~ 分支切换到指定位置</p>
-<p>git checkout 分支名 切换分支  </p>
-<p>git checkout -b 分支名 创建并切换到分支</p>
-<p>git merge name name分支合并到当前分支</p>
-<p>git rebase name 复制HEAD指向的分支到name分支下 在共同祖先的基础下,提取HEAD指向的分支的修改:在name分支基础上再应用一次。</p>
-<p>git rebase -i HEAD~4 对前4个提交做一个交互式的改动(改变顺序或者删除)</p>
-<p>git rebase 分支名A 分支名B 分支B变基到分支A HEAD最终指向分支B<br>merge与rebase区别:变基是将一系列提交按照原有次序依次应用到另一分支上,而合并是把最终结果合在一起。因此整合的最终结果所指向的快照始终是一样的,只不过提交历史不同罢了。</p>
-<p>git cherry-pick 版本号…版本号  复制指定的提交到当前版本号<br>git tag 标签名 版本名增加指定标签</p>
+        <h1 id="Git-基本流程"><a href="#Git-基本流程" class="headerlink" title="Git 基本流程"></a>Git 基本流程</h1><ol>
+<li>git clone 仓库地址  </li>
+<li>git add .  </li>
+<li>git commit -v</li>
+<li>git remote add 仓库名 仓库地址</li>
+<li>git pull 仓库名 远程分支 </li>
+<li>git push 仓库名 远程分支  </li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/06/测试/" data-id="cjzwioegp00018gqj55txf21p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/06/测试/" data-id="cjzwjuf870001t0qjp8jqt9ot" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
     </footer>
   </div>
   
@@ -143,9 +133,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
